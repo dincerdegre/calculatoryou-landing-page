@@ -93,16 +93,20 @@ header {
 
 .middle {
   width: 100%;
+  padding: 70px 0 0 0;
   margin: 0 auto;
   height: auto !important;
 }
+.topAds {margin: 0 auto;}
 
 .middleline {
   margin: 0 auto;
   display: flex;
-  padding: 70px 0 0 0;
+  
   height: auto !important;
 }
+
+.topAds {width: 100%;}
 
 /* Main */
 .main {width:70%;margin: 1% 1% 1% 1%;}
@@ -397,7 +401,7 @@ h5 {
 p {padding: 0.8rem;}
 
 @media only screen and (min-width: 1400px) {
-  .middleline,.footerline {
+  .middleline,.topAds,.footerline {
     width: 1140px;
   }
   h1 {
@@ -425,7 +429,7 @@ p {font-size:1.2rem;
 
 
 @media only screen and (max-width: 1399px) and (min-width: 1200px) {
-  .middleline,.footerline {
+  .middleline,.topAds,.footerline {
     width: 1140px;
   }
   h1 {
@@ -452,7 +456,7 @@ p {font-size:1.2rem;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .middleline,.footerline {
+  .middleline,.topAds,.footerline {
     width: 100%;
   }
   h1 {
@@ -478,7 +482,7 @@ p {font-size:1.2rem;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-  .middleline,.footerline {
+  .middleline,.topAds,.footerline {
     width: 100%;
     display: block;
   }
@@ -510,7 +514,7 @@ p {font-size:1.2rem;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-    .middleline,.footerline {
+    .middleline,.topAds,.footerline {
         width: 100%;
         display: block;
       }
@@ -547,7 +551,7 @@ p {font-size:1.2rem;
     .calculatorLeft,.calculatorRight {width: 99%;margin: 0 auto;}
 }
 @media only screen and (max-width: 575px) {
-    .middleline,.footerline {
+    .middleline,.topAds,.footerline {
         width: 100%;
         display: block;
       }
