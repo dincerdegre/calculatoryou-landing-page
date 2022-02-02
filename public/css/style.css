@@ -440,6 +440,10 @@ h3 {
     font-size: 1.6rem;
     line-height: 1.8rem;
 }
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
 p {font-size:1.2rem;
     line-height: 1.4rem;}
     .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
@@ -463,6 +467,10 @@ h3 {
     font-size: 1.6rem;
     line-height: 1.8rem;
 }
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
 p {font-size:1.2rem;
     line-height: 1.4rem;}
     .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
@@ -485,6 +493,10 @@ h2 {
 h3 {
     font-size: 1.6rem;
     line-height: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }
 p {font-size:1.2rem;
     line-height: 1.4rem;}
@@ -519,6 +531,10 @@ p {font-size:1.2rem;
         font-size: 1.4rem;
         line-height: 1.6rem;
     }
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
     p {font-size:1.1rem;
         line-height: 1.5rem;}
         .cToolHalf h2.titleName {font-size: 1.4rem;line-height: 1.7rem;}
@@ -527,7 +543,8 @@ p {font-size:1.2rem;
     .sidebar {margin:0 auto;width: 90%;}
     .footerline {display: block;}
     .footLeft,.footCenter,.footRight {text-align: center; width: 90%;margin: 0 auto;}
-    
+    .calculator {display: block;}
+    .calculatorLeft,.calculatorRight {width: 99%;margin: 0 auto;}
 }
 @media only screen and (max-width: 575px) {
     .middleline,.footerline {
@@ -551,6 +568,10 @@ p {font-size:1.2rem;
         font-size: 1.4rem;
         line-height: 1.6rem;
     }
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
     p {font-size:1.1rem;
         line-height: 1.5rem;}
         .cToolHalf h2.titleName {font-size: 1.4rem;line-height: 1.7rem;}
@@ -559,4 +580,6 @@ p {font-size:1.2rem;
     .sidebar {margin:0 auto;width: 90%;}
     .footerline {display: block;}
     .footLeft,.footCenter,.footRight {text-align: center;width: 90%;margin: 0 auto;}
+    .calculator {display: block;}
+    .calculatorLeft,.calculatorRight {width: 99%;margin: 0 auto;}
 }
