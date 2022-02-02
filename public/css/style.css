@@ -263,6 +263,99 @@ width: 100%;
     background-color:#0475ed;
 }
 
+.calculator {
+    display: flex;
+    margin: 3% 0.5% 2% 0.5%;
+    width: 99%;
+    justify-content: space-between;
+}
+
+
+.calculatorLeft,.calculatorRight {
+    width:49.5%;
+}
+
+.calculator input {
+    text-align: left;
+	width: 100%;
+    margin: 1% 0;
+    font-size:1.4rem;
+    line-height: 1.6rem;
+	resize: vertical;
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #bdc3c7;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 14px 14px;
+	box-shadow: none;
+	outline: none
+}
+.calculator input {
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.calculator input:focus {
+    border: 2px solid #3498db;
+}
+
+.calculator select {
+    text-align: left;
+	width: 100%;
+    margin: 1% 0;
+    font-size:1.4rem;
+    line-height: 1.5rem;
+	resize: vertical;
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #bdc3c7;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 14px 14px;
+	box-shadow: none;
+	outline: none
+}
+.calculator select {
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.calculator select:focus {
+    border: 2px solid #3498db;
+}
+
+.calculatorResult {
+    width: 99%;
+    margin: 3% 0.5% 2% 0.5%;
+    padding:3% 2%;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #e3f7fc;
+	border: 1px solid #8ed9f6;
+    color: #2c2c2c;
+}
+
+.innerResult {
+    padding: 2% 0 0 0;
+    color: #2c2c2c;
+}
+.unitOne {
+    font-size: 1.5rem;;
+    line-height:3rem;
+    font-weight: bold;
+}
+.unitTwo {
+    font-size: 4rem;;
+    line-height:5rem;
+    font-weight: bold;
+}
+.unitAll {
+    font-size:1rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
 
 
 
@@ -319,6 +412,10 @@ h3 {
     font-size: 1.6rem;
     line-height: 1.8rem;
 }
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
 p {font-size:1.2rem;
     line-height: 1.4rem;}
     .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
@@ -328,7 +425,7 @@ p {font-size:1.2rem;
 
 
 @media only screen and (max-width: 1399px) and (min-width: 1200px) {
-  .middleline {
+  .middleline,.footerline {
     width: 1140px;
   }
   h1 {
@@ -351,7 +448,7 @@ p {font-size:1.2rem;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .middleline {
+  .middleline,.footerline {
     width: 100%;
   }
   h1 {
@@ -373,7 +470,7 @@ p {font-size:1.2rem;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
-  .middleline {
+  .middleline,.footerline {
     width: 100%;
     display: block;
   }
@@ -395,10 +492,13 @@ p {font-size:1.2rem;
 .logoPanel a {font-size:2.3rem;}
 .main {margin:0 auto;width: 90%;}
 .sidebar {margin:0 auto;width: 90%;}
+.footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center; width: 90%;margin: 0 auto;}
+    
 }
 
 @media only screen and (max-width: 767px) and (min-width: 576px) {
-    .middleline {
+    .middleline,.footerline {
         width: 100%;
         display: block;
       }
@@ -425,9 +525,12 @@ p {font-size:1.2rem;
     .logoPanel a {font-size:2.3rem;}
     .main {margin:0 auto;width: 90%;}
     .sidebar {margin:0 auto;width: 90%;}
+    .footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center; width: 90%;margin: 0 auto;}
+    
 }
 @media only screen and (max-width: 575px) {
-    .middleline {
+    .middleline,.footerline {
         width: 100%;
         display: block;
       }
@@ -454,4 +557,6 @@ p {font-size:1.2rem;
     .logoPanel a {font-size:1.7rem;}
     .main {margin:0 auto;width: 90%;}
     .sidebar {margin:0 auto;width: 90%;}
+    .footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center;width: 90%;margin: 0 auto;}
 }
