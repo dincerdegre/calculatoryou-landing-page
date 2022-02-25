@@ -1,0 +1,591 @@
+a,hr{padding:0}a,button,input,select,textarea{margin:0}article,aside,details,figure,footer,header,hr,main,nav,section,summary{display:block}abbr,address,article,aside,audio,b,blockquote,body,body div,caption,cite,code,dd,del,details,dfn,dl,dt,em,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-weight:400;vertical-align:baseline;background:0 0}input[type=checkbox],th{vertical-align:bottom}html{box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}embed,object{max-width:100%}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{font-size:100%;vertical-align:baseline;background:0 0}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}th{font-weight:700}td{font-weight:400;vertical-align:top}hr{height:1px;border:0;border-top:1px solid #ccc;margin:0.5em 0}input,select{vertical-align:middle}pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}input[type=radio]{vertical-align:text-bottom}.ie7 input[type=checkbox]{vertical-align:baseline}.ie6 input{vertical-align:text-bottom}input,select,textarea{font:99% sans-serif}table{border-collapse:separate;border-spacing:0;font:100%}small{font-size:85%}strong{font-weight:700}td,td img{vertical-align:top}sub,sup{font-size:75%;line-height:0;position:relative}sup{top:-.5em}sub{bottom:-.25em}code,kbd,pre,samp{font-family:monospace,sans-serif}.clickable,button,input[type=button],input[type=file],input[type=submit],label{cursor:pointer}button,input[type=button]{width:auto;overflow:visible}.ie7 img{-ms-interpolation-mode:bicubic}.clearfix:after{content:" ";display:block;clear:both}
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing:border-box;}
+html,body {height:100%;padding:0 !important;text-rendering: optimizeLegibility;text-rendering: geometricPrecision;font-smooth: always;-moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;-webkit-font-smoothing: subpixel-antialiased;}
+body {width: 100%;height: 100%;font-size:16px;font-family: Arial,Helvetica,sans-serif;text-rendering: optimizeLegibility !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale;}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background-color: #222;
+    width: 250px;
+    min-height: 100vh;
+    left: -250px;
+    transition: left 0.5s ease;
+    position: fixed;
+    padding-top:60px;
+    z-index: 999;
+    -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+	-moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+	box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7)
+  }
+  label {
+    font-size: 40px;
+    width:60px;
+    height:60px;
+    cursor: pointer;
+    position: fixed;
+    left: 8px;
+    top: 0;
+    padding:0;
+    z-index: 1000;
+    color: white;
+  }
+  
+  label:hover {
+    color: #ccc;
+  }
+  
+
+  #toggle {
+    display: none;
+  }
+  
+  #toggle:checked + .hamburger-menu {
+    left: 0;
+  }
+ 
+  .hamburger-menu a:nth-of-type(1) {
+    border-top: 1px solid #333;
+  }
+  .hamburger-menu a {
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    border-left: 3px solid transparent;
+  }
+  
+  .hamburger-menu a:hover {
+    border-left: 3px solid #219bf3;
+    color: #219bf3;
+    background-color: #121212;
+  }
+  .logo {
+    padding-top: 60px;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    color: white;
+  }
+
+header {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  z-index: 99;
+  top: 0;
+  padding: 0;
+  position: fixed;
+  background-color: #219bf3;
+  -ms-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.logoPanel {max-width:400px;margin:0 auto;display: block;height:60px;}
+.logoPanel a {margin:0 auto;text-align: center;display:block;line-height: 60px;text-decoration: none;font-weight:700;color: #fff;}
+
+.middle {
+  width: 100%;
+  padding: 70px 0 0 0;
+  margin: 0 auto;
+  height: auto !important;
+}
+.topAds {margin: 0 auto;}
+
+.middleline {
+  margin: 0 auto;
+  display: flex;
+  
+  height: auto !important;
+}
+
+.topAds {width: 100%;}
+
+/* Main */
+.main {width:70%;margin: 1% 1% 1% 1%;}
+
+.calculateTools {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cToolHeader {
+    width: 100%;
+    text-align: center;
+    padding:0.5rem 0 0.5rem 0;
+}
+.cToolHeader h2 {
+    color:#000;
+}
+.cToolHeader h2 span {
+    color: #0475ed;
+}
+
+.cToolHalf {
+    width: 49%;
+    height: 100px;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    z-index: 10;
+    display: block;
+    position:relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #0475ed;
+    color: #fff;
+
+}
+.cToolHalf:hover {
+	background-color: #004792;
+}
+
+.cToolHalf a.boxWrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+}
+.cToolHalf h2.titleName {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 2% 2% 1%;
+    color: #fff;
+}
+
+.cToolFull {
+    width: 99%;
+    height: 100px;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    z-index: 10;
+    display:block;
+    position:relative;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #0475ed;
+    color: #fff;
+}
+.cToolFull:hover {
+	background-color: #004792;
+}
+.cToolFull a.boxWrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+}
+.cToolFull h2.titleName {
+    position: relative;
+    line-height:100px !important;
+    text-align: center;
+    padding:0;
+    color: #fff;
+}
+
+.ads{
+    height: 300px;
+    width: 99%;
+    background-color: rgb(224, 224, 224);
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    z-index: 10;
+    text-align: center;
+    line-height: 300px;
+    display:block;
+    border-radius: 5px;
+}
+
+.blog {padding:3% 0;}
+
+footer {
+    width: 100%;
+    background-color: #1c1c1c;
+    border-top: 1px solid #d9d9d9;
+    color: #fff;
+    margin: 30px 0 0;
+    justify-content: space-between;
+}
+
+.footerline {display:flex;margin: 0 auto;}
+
+.footLeft {width:20%;text-align: center;font-size:6rem;line-height:12rem;font-weight: 700;}
+.footCenter {width:60%;}
+.footRight {width:20%;}
+
+.footCenter h3 {margin:5% 0 2% 0;}
+
+.footCenter p {color: rgb(231, 231, 231);}
+.footRight a {display:block;text-align: center; color: #fff;text-decoration: none;line-height: 200px;}
+
+/* Sidebar */
+.sidebar {width:30%;margin: 1% 1% 1% 0;}
+.userSelf {
+    padding:2% 0 2% 0;
+}
+.userSelf h3 {
+    text-align: center;
+    padding:3% 0 3% 0;
+}
+.userSelf h3 span {
+    color: #0475ed;
+}
+
+.userCalculations {
+width: 100%;
+}
+.userCalculations .calculationOne {
+    background-color: #ededed;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 0 5px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+.userCalculations .calculationOne a:nth-of-type(1) {
+    width: 70%;
+    padding: 15px 8px;
+    text-decoration: none;
+    color: #000;
+    background-color: #ededed;
+}
+
+.userCalculations .calculationOne a:nth-of-type(2) {
+    width: 20%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color:#0475ed;
+}
+
+.calculator {
+    display: flex;
+    margin: 3% 0.5% 2% 0.5%;
+    width: 99%;
+    justify-content: space-between;
+}
+
+
+.calculatorLeft,.calculatorRight {
+    width:49.5%;
+}
+
+.calculator input {
+    text-align: left;
+	width: 100%;
+    margin: 1% 0;
+    font-size:1.4rem;
+    line-height: 1.6rem;
+	resize: vertical;
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #bdc3c7;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 14px 14px;
+	box-shadow: none;
+	outline: none
+}
+.calculator input {
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.calculator input:focus {
+    border: 2px solid #3498db;
+}
+
+.calculator select {
+    text-align: left;
+	width: 100%;
+    margin: 1% 0;
+    font-size:1.4rem;
+    line-height: 1.5rem;
+	resize: vertical;
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #bdc3c7;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 14px 14px;
+	box-shadow: none;
+	outline: none
+}
+.calculator select {
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+.calculator select:focus {
+    border: 2px solid #3498db;
+}
+
+.calculatorResult {
+    width: 99%;
+    margin: 3% 0.5% 2% 0.5%;
+    padding:3% 2%;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #e3f7fc;
+	border: 1px solid #8ed9f6;
+    color: #2c2c2c;
+}
+
+.innerResult {
+    padding: 2% 0 0 0;
+    color: #2c2c2c;
+}
+.unitOne {
+    font-size: 1.5rem;;
+    line-height:3rem;
+    font-weight: bold;
+}
+.unitTwo {
+    font-size: 4rem;;
+    line-height:5rem;
+    font-weight: bold;
+}
+.unitAll {
+    font-size:1rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+h1 {
+	font-weight: 700;
+	font-style: normal
+}
+
+h2 {
+	font-weight: 700;
+	font-style: normal
+}
+
+h3 {
+	font-weight: 700;
+	font-style: normal
+}
+
+h4 {
+	font-weight: 700;
+	font-style: normal
+}
+
+h5 {
+	font-weight: 700;
+	font-style: normal
+}
+p {padding: 0.8rem;}
+
+@media only screen and (min-width: 1400px) {
+  .middleline,.topAds,.footerline {
+    width: 1140px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+p {font-size:1.2rem;
+    line-height: 1.4rem;}
+    .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
+.logoPanel a {font-size:2.3rem;}
+
+}
+
+
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+  .middleline,.topAds,.footerline {
+    width: 1140px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+p {font-size:1.2rem;
+    line-height: 1.4rem;}
+    .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
+.logoPanel a {font-size:2.3rem;}
+  
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .middleline,.topAds,.footerline {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+p {font-size:1.2rem;
+    line-height: 1.4rem;}
+    .cToolHalf h2.titleName {font-size: 1.7rem;line-height: 2rem;}
+.logoPanel a {font-size:2.3rem;}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .middleline,.topAds,.footerline {
+    width: 100%;
+    display: block;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+}
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+p {font-size:1.2rem;
+    line-height: 1.4rem;}
+    .cToolHalf h2.titleName {font-size: 1.4rem;line-height: 1.7rem;}
+.logoPanel a {font-size:2.3rem;}
+.main {margin:0 auto;width: 90%;}
+.sidebar {margin:0 auto;width: 90%;}
+.footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center; width: 90%;margin: 0 auto;}
+    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .middleline,.topAds,.footerline {
+        width: 100%;
+        display: block;
+      }
+      .calculateTools {
+        display: block;
+    }
+    .cToolHalf {width: 99%;margin: 1% 0.5% 1% 0.5%;}
+    .cToolFull {margin-bottom:1%;}
+      h1 {
+        font-size: 2.0rem;
+        line-height: 2.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    p {font-size:1.1rem;
+        line-height: 1.5rem;}
+        .cToolHalf h2.titleName {font-size: 1.4rem;line-height: 1.7rem;}
+    .logoPanel a {font-size:2.3rem;}
+    .main {margin:0 auto;width: 90%;}
+    .sidebar {margin:0 auto;width: 90%;}
+    .footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center; width: 90%;margin: 0 auto;}
+    .calculator {display: block;}
+    .calculatorLeft,.calculatorRight {width: 99%;margin: 0 auto;}
+}
+@media only screen and (max-width: 575px) {
+    .middleline,.topAds,.footerline {
+        width: 100%;
+        display: block;
+      }
+      .calculateTools {
+        display: block;
+    }
+    .cToolHalf {width: 99%;margin: 1% 0.5% 1% 0.5%;}
+    .cToolFull {margin-bottom:1%;}
+      h1 {
+        font-size: 2.0rem;
+        line-height: 2.1rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    p {font-size:1.1rem;
+        line-height: 1.5rem;}
+        .cToolHalf h2.titleName {font-size: 1.4rem;line-height: 1.7rem;}
+    .logoPanel a {font-size:1.7rem;}
+    .main {margin:0 auto;width: 90%;}
+    .sidebar {margin:0 auto;width: 90%;}
+    .footerline {display: block;}
+    .footLeft,.footCenter,.footRight {text-align: center;width: 90%;margin: 0 auto;}
+    .calculator {display: block;}
+    .calculatorLeft,.calculatorRight {width: 99%;margin: 0 auto;}
+}
